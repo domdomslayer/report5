@@ -18,11 +18,17 @@ public class LivingThing {
      */
     private int attack;
     /**
-     *　生き物が死んでいるかどうかを判別する
+     * 生き物が死んでいるかどうかを判別する
      * true:死んでいる, false:生きている
      */
     private boolean dead;
 
+    /**
+     *名前、最大HP、攻撃力、死んでいるかどうかを設定し、HPと攻撃力の値をprint。
+     * @param name 名前
+     * @param maximumHP　最大HP
+     * @param attack　攻撃力
+     */
     public LivingThing(String name, int maximumHP, int attack) {
         this.name = name;
         hitPoint = maximumHP;
